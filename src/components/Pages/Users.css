@@ -1,0 +1,78 @@
+.panelWrapper {
+    width: 100%;
+    padding: 15px;
+    padding-bottom: 60px;
+}
+
+.panelWrapper h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+}
+
+.addUsers {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+    outline: none;
+    background: #f9f9f9;
+    width: max-content;
+    padding: 10px;
+}
+
+.addUsers img {
+    width: 20px;
+    height: 20px;
+}
+
+.addUsers span {
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.usersList {
+    margin: 30px 0 0 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #fff;
+    text-align: left;
+    padding: 8px;
+    font-size: 20px;
+}
+
+th {
+    background-color: rgb(253 248 243);
+}
+
+td {
+    background-color: rgb(241 241 241);
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: rgb(146 146 146 / 7%);
+}
+
+td img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+td img[alt="edit"] {
+    width: 20px;
+    height: 20px;
+}
+
+tr.checked td {
+    background-color: rgb(146 146 146 / 7%);
+}

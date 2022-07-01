@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #e6e6e6;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+aside {
+    width: 250px;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #f1f1f1!important;
+    padding: 15px;
+    transition: width 0.4s ease-in;
+    -webkit-transition: width 0.4s ease-in;
+    -ms-transition: width 0.4s ease-in;
+    -o-transition: width 0.4s ease-in;
+    /* box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%); */
+}
+
+aside.active {
+    width: 50px;
+    padding: 15px 5px;
+}
+
+aside.active .logo {
+    width: 30px;
+    height: 30px;
+}
+
+aside.active .menu a {
+    padding: 0 0 0 10px;
+    width: 25px;
+    overflow: hidden;
+    text-overflow: clip;
+    font-size: 20px;
+}
+
+.rightNavigationPage {
+    width: calc(100% - 250px);
+    transition: width 0.4s ease-in;
+    -webkit-transition: width 0.4s ease-in;
+    -ms-transition: width 0.4s ease-in;
+    -o-transition: width 0.4s ease-in;
+    position: relative;
+}
+
+.rightNavigationPage.active {
+    width: calc(100% - 50px);
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.centerTile {
+    width: 100%;
+    padding: 15px;
+    height: 92vh;
+    overflow: auto;
+}
+
+.searchData {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.searchBox {
+    width: 300px;
+}
+
+.searchData label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.searchData input {
+    font: inherit;
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 0.15rem;
+    margin-bottom: 0.5rem;
+}
+
+.searchData input:focus {
+    outline: none;
+    border-color: #ab0706;
+}
+
+.searchData button {
+    margin-top: 23px;
+    margin-left: 10px;
+}
+
+.pagination {
+    margin: 15px auto;
+    display: flex;
+    list-style: none;
+    outline: none;
+}
+
+.pagination>.active>a {
+    background-color: #ab0706;
+    border-color: #ab0706;
+    color: #fff;
+}
+
+.pagination>li>a {
+    border: 1px solid #ab0706;
+    padding: 5px 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.pagination>.active>a,
+.pagination>.active>span,
+.pagination>.active>a:hover,
+.pagination>.active>span:hover,
+.pagination>.active>a:focus,
+.pagination>.active>span:focus {
+    background-color: #ab0706;
+    border-color: #ab0706;
+    outline: none;
+}
+
+.pagination>li>a,
+.pagination>li>span {
+    color: #ab0706
+}
+
+.pagination>li:first-child>a,
+.pagination>li:first-child>span,
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+    border-radius: unset
+}
